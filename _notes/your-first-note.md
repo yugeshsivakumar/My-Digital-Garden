@@ -1,127 +1,192 @@
+
+
 ---
-title: Your first seed
+title: How to Publish Your Obsidian Notes Online for Free
+---
+# How to Publish Your Obsidian Notes Online for Free
+
+![1741382957716](image/your-first-note/1741382957716.png)
+
+## Introduction
+
+Obsidian is a powerful note-taking tool, but what if you want to share your notes with the world? **Digital Garden** lets you publish your Obsidian notes as a website so others can explore your knowledge base.
+
+In this guide, we will learn how to:
+
+✅ Set up a GitHub account
+✅ Use Digital Garden Jekyll Template to publish notes
+✅ Deploy your site using Vercel
+✅ Automatically update your notes using GitHub Desktop
+
+By the end of this tutorial, even non-technical users can set up their public knowledge base in just a few steps! 🎉
+
+👉 Here's a sample hosted page: [Digital Garden](https://my-digital-garden-sand-one.vercel.app/) 🌱✨
+
 ---
 
-### Welcome!
+## Why Choose Digital Garden Instead of Obsidian Publish?
 
-This is your first note. You'll find it in the [`notes/`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes) directory. 
+Obsidian offers an official publishing service called **Obsidian Publish**, but it costs **$10 per month**. While it provides an easy way to share notes, it may not be the best option for those looking for a **free alternative**.
 
-### Link syntax
+### Here's why Digital Garden is a better choice:
 
-To link to another note, you can use multiple syntaxes. The following four use the "double-bracket" notation ([view the Markdown source file](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/master/_notes/your-first-note.md#link-syntax) to see the underlying syntax).
+✅ **Completely Free** – Unlike Obsidian Publish, Digital Garden lets you host your notes at no cost using GitHub and Vercel.
+✅ **More Customization** – You have full control over the design, layout, and structure of your website.
+✅ **Open-Source & Flexible** – You can modify and expand it according to your needs.
+✅ **Automatic Updates** – Every time you push new notes to GitHub, your site updates automatically.
 
-- Using the note title: [[a note about cats]]
-- Using the note's filename: [[cats]]
-- Using the note's title, with a label: [[A note about cats|link to the note about cats using the note title]]
-- Using the note's filename, with a label: [[cats|link to the note about cats using the note's filename]]
+With **Digital Garden**, you get all the benefits of publishing your notes online without any recurring fees! 🚀
 
-You can organize notes in subdirectories and link them normally. For example, the links above all point to the `_notes/animals/cats.md` file. Here's another example: [[tigers]].
+---
 
-Non-latin languages are supported: [[안녕하세요]]; so are accents/diacritics: [[bon appétit!]]
+## Step 1: Create a GitHub Account
 
-Dashes and underscores in file names are supported, and may be omitted in the bracket link syntax. As an example, the `your-first-note.md` file can be linked to with [[your first note]] or [[your-first-note]], or even [[yOuR-FiRsT Note]].
+**GitHub** is a platform that helps you store and manage your files online. You'll need an account since **Digital Garden** uses GitHub to store notes.
 
-In all cases, if the double-bracket link does not point to a valid note, the double brackets will still be shown, like this: [[there is no note that matches this link]].
+### How to Sign Up for GitHub:
 
-Alternatively, you can use regular [Markdown syntax](https://www.markdownguide.org/getting-started/) for links, with a relative link to the other note, like this: [this is a Markdown link to the note about cats](/cats){: .internal-link}. Don't forget to use the `.internal-link` class to make sure the link is styled as an internal link (without the little arrow).
+1. Go to [GitHub.com](https://github.com) and click **Sign Up**.
+2. Enter a username, email, and password.
+3. Complete the verification process and click **Create Account**.
 
-Since the Web is all about HTML, you can always use plain HTML if you want, like this: <a class="internal-link" href="/cats">This is a link to the note about cats with HTML</a>.
+Once your account is ready, you can move to the next step!
 
-Of course, you can also link to external websites, like this: [this is a link to Wikipedia](https://wikipedia.org/). Again, you can use plain HTML if you prefer. Footnotes are also supported and will be treated like internal links.[^1] You can point to other notes in your footnotes.[^2]
+---
 
-[^1]: This is a footnote. For more information about using footnotes, check out the [Markdown Guide](https://www.markdownguide.org/extended-syntax/#footnotes).
-[^2]: This is another footnote that links to the note about [[cats]]. You may also point to [[notes that do not exist]] if you wish.
+## Step 2: Use the Digital Garden Jekyll Template
 
-### Tweet embedding
+We will use a pre-built **Jekyll template** to create your website quickly.
 
-Note: This behavior is disabled by default for privacy reasons. See "Site configuration" section below to enable it.
+### How to Use the Template:
 
-You may include a tweet URL on its own line (like below), and it would be replaced with an official Twitter embed if the site configuration demands it.
+1. Go to this template: 👉 **[Digital Garden Jekyll Template]**
+2. Click on **"Use this template"** (top-right corner).
+3. Select **Create a new repository**.
+4. Name your repository (e.g., `my-digital-garden`).
+5. Choose **Public** (so others can access it).
+6. Click **Create repository from template**.
 
-https://twitter.com/jack/status/20
+Now your **GitHub repo** is ready. Next, we'll download **GitHub Desktop** to manage files easily.
 
-### Media embedding
+---
 
-You may embed media files within a note using HTML5 media tags. Here's an example for an audio file:
+## Step 3: Install GitHub Desktop and Clone the Repo
 
-"Jazzy Frenchy" by Benjamin Tissot from bensound.com
-<audio controls>
-  <source src="{{ site.baseurl }}/assets/jazzyfrenchy.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+**GitHub Desktop** helps you download and upload files without using complex commands.
 
-### Site configuration
+### How to Install GitHub Desktop:
 
-Some behavior is configurable by tweaking the `_config.yml` file.
+1. Download GitHub Desktop 👉 [desktop.github.com](https://desktop.github.com)
+2. Install and open the app.
+3. Sign in using your **GitHub account**.
 
-**`use_html_extension`**: if you use a static host that doesn't support URLs that don't end with `.html` (such as Neocities), try changing the `use_html_extension` value to `true` in the `_config.yml` file and restart the Jekyll server (or re-build the site). This adds a `.html` extension to note URLs and may resolve issues with links. If you're still having trouble, I recommend using Netlify to host your digital garden: it's free, easy to use, and fully supports this template's features out of the box.
+### Clone the Repository to Your Computer:
 
-**`open_external_links_in_new_tab`**: when set to `true`, this makes external links open in new tabs. Set to `false` to open all links in the current tab.
+1. In **GitHub Desktop**, click **File > Clone Repository**.
+2. Select your **Digital Garden repo** (e.g., `my-digital-garden`).
+3. Choose a **local folder** to store it.
+4. Click **Clone**.
 
-**`embed_tweets`**: when set to `true`, tweet URLs on their own lines will be replaced with a Twitter embed. Default value is `false`.
+This will download your **Digital Garden files** to your computer. Now, let's deploy it online!
 
-### Automatic bi-directional links
+---
 
-Notice in the "Notes mentioning this note" section that there is another note linking to this note. This is a bi-directional link, and those are automatically created when you create links to other notes.
+## Step 4: Deploy Your Digital Garden Using Vercel
 
-### Link previews
+**Vercel** is a free hosting platform that will turn your notes into a website.
 
-If you're on a device with mouse support, try hovering your mouse on internal links to preview the notes: [[a note about cats]].
+### How to Deploy with Vercel:
 
-Links that have been previewed will be cached to avoid redundant requests.
+1. Go to **[Vercel](https://vercel.com)**.
+2. Sign up with **GitHub**.
+3. Click **New Project**.
+4. Select your **Digital Garden repository** (e.g., `my-digital-garden`).
+5. Click **Import**.
+6. Click **Deploy** and wait for a few minutes.
 
-### Images and other Markdown goodies
+Once done, Vercel will give you a website link (e.g., `https://mydigitalgarden.vercel.app`). 🎉
 
-Finally, because you have the full power of Markdown in this template, you can use regular Markdown syntax for various formatting options.
+---
 
-Lists work as expected:
+## Step 5: Add Your Obsidian Notes to the Digital Garden
 
-- List element A
-- List element B
-- List element C
+Now, we'll move your **Obsidian notes** to the Digital Garden folder.
 
-1. List element
-2. List element
-3. List element
+### Copy Notes to the Right Folder:
 
-If you'd like to quote other people, consider using quote blocks:
+1. Open the **GitHub Desktop folder** where you downloaded `my-digital-garden`.
+2. Inside the folder, find `_notes/`.
+3. Copy your **Obsidian Markdown files** (`.md` files) or folder into this `_notes` folder.
 
-> Lorem ipsum dolor sit amet
+✅ Your notes are now inside the Digital Garden!
 
-And of course, images look great:
+---
 
-<img src="{{ site.baseurl }}/assets/image.jpg"/>
+## Step 6: Push the Changes to GitHub
 
-You can also ==highlight some content== by wrapping it with `==`.
+After adding notes, we need to upload them to **GitHub** so they appear on the website.
 
-Non-latin languages are supported too: ==你好==, ==안녕하세요==, ==こんにちは==.
+### How to Push Notes Using GitHub Desktop:
 
-### Code syntax highlighting
+1. Open **GitHub Desktop**.
+2. You will see the new files listed as **"Uncommitted changes"**.
+3. In the bottom-left, type a message like **"Added new notes"**.
+4. Click **Commit to main**.
+5. Click **Push to origin** to upload the changes.
 
-You can add code blocks with full syntax color highlighting by wrapping code snippet in triple backticks and specifying the type of the code (`js`, `rb`, `sh`, etc.):
+After a few minutes, your **notes will appear** on your website! 🎉
 
-```js
-// Here's a bit of JavaScript:
-if (a === b || c == d)
-  console.log('hello!')
-```
+---
 
-```rb
-# And now some Ruby
-def foo(bar)
-  "baz"
-end
-```
+## Step 7: View Your Published Notes
 
-```sh
-$ cat /dev/urandom | grep "the answer to life" # shell scripts look nice too
-```
+1. Go to your **Vercel website link** (e.g., `https://mydigitalgarden.vercel.app`).
+2. Click on your **first note**.
+3. Scroll down to the bottom of the page to see a **graph view** of all your notes.
 
+🧠 This allows you to **visually navigate** your notes and explore their connections! 🚀
 
-### Next steps
+---
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+## Step 8: Customize Your Homepage
 
-The easiest way to build your own digital garden based on this template is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+By default, your homepage shows a **list of notes**. You can customize it!
 
-Go forth, have fun, and learn new something every day! ✌️
+### How to Edit Your Homepage:
+
+1. Go to your **GitHub Desktop folder** (`my-digital-garden`).
+2. Open the folder: `/digital-garden/_pages/index.md`
+3. Edit `index.md` using **Notepad** or **Obsidian**.
+4. Change the text to customize your homepage.
+5. Save the file and **push the changes** to GitHub.
+
+✅ Your website will update automatically! 🎨
+
+---
+
+## Bonus: Add a Custom Domain
+
+Want a professional URL like **mygarden.com**?
+
+### How to Use a Custom Domain in Vercel:
+
+1. Buy a domain from **Namecheap, Google Domains, or Cloudflare**.
+2. Go to **Vercel Dashboard > Settings > Domains**.
+3. Click **Add Domain** and enter your new domain.
+4. Update your **DNS settings** (Vercel provides instructions).
+
+✅ Now, your site will be accessible from your **custom domain**! 🌍
+
+---
+
+## Finally
+
+🎉 Congratulations! You've successfully published your **Obsidian notes** as a **Digital Garden** using **GitHub and Vercel**. 🚀
+
+### What You Can Do Next:
+
+✅ Keep adding your notes to `_notes/` and push changes to update your site.
+✅ Explore themes to customize your site's look.
+✅ Share your **Digital Garden** with others!
+
+If you found this guide helpful, share it with your friends! 🎉
