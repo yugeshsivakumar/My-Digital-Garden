@@ -5,29 +5,40 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+# Welcome to My Digital Garden! 🌱✨  
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[your-first-note]]</span> to get started on your exploration.
+<p style="padding: 2em 1.5em; background: linear-gradient(135deg, #e3f2fd, #f5f7ff); border-radius: 8px; text-align: center;">
+  🌟 Start exploring with <span style="font-weight: bold">[[My-first-note]]</span> and grow your knowledge base!  
 </p>
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+---
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+## 📌 Recently Updated Notes  
 
-<strong>Recently updated notes</strong>
-
-<ul>
+<ul style="list-style-type: none; padding: 0;">
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
   {% for note in recent_notes limit: 5 %}
-    <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    <li style="margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 6px; transition: 0.3s;">
+      📝 <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}" style="text-decoration: none; font-weight: bold;">
+        {{ note.title }}
+      </a>  
+      <span style="color: #666; font-size: 0.9em;">({{ note.last_modified_at | date: "%Y-%m-%d" }})</span>
     </li>
   {% endfor %}
 </ul>
 
+---
+
+## ✨ How to Navigate?  
+📂 Browse notes from the sidebar 
+🔗 Use **internal links** to connect thoughts  
+🧠 Build your **knowledge network**  
+
 <style>
   .wrapper {
-    max-width: 46em;
+    max-width: 48em;
+  }
+  li:hover {
+    background: #e3f2fd;
   }
 </style>
