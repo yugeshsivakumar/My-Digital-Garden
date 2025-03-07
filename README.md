@@ -1,35 +1,87 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8cfa8785-8df8-4aad-ad35-8f1c790b8baf/deploy-status)](https://app.netlify.com/sites/digital-garden-jekyll-template/deploys)
+# **📚 Obsidian Digital Garden**  
 
-# Digital garden Jekyll template
+![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Publish+your+Obsidian+notes+online!+🚀)  
 
-Use this template repository to get started with your own digital garden.
+![GitHub repo size](https://img.shields.io/github/repo-size/yugeshsivakumar/My-Digital-Garden)  
+![MIT license badge](https://img.shields.io/github/license/JanDeDobbeleer/oh-my-posh.svg)
 
-**I wrote a tutorial explaining how to set it up: [Setting up your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)**
+## **🪴 Overview**  
+This project allows you to **publish your Obsidian notes online** using the **Digital Garden Jekyll Template**, GitHub, and Netlify.  
 
-Preview the template here: https://digital-garden-jekyll-template.netlify.app/
+### **Why Use Digital Garden Instead of Obsidian Publish?**  
+While **Obsidian Publish** is a paid service ($10/month), this method is:  
+✅ **Completely Free** – Host your notes on **GitHub & Netlify** at no cost.  
+✅ **Customizable** – Modify the site’s appearance and structure as you like.  
+✅ **Automatic Updates** – Your site updates instantly when you push changes.  
+✅ **Interactive Graph View** – Explore your notes visually and click nodes to navigate.  
 
-- Based on Jekyll, a static website generator
-- Supports Roam-style double bracket link syntax to other notes
-- Creates backlinks to other notes automatically
-- Features link previews on hover
-- Includes graph visualization of the notes and their links
-- Features a simple and responsive design
-- Supports Markdown or HTML notes
+**Here’s a sample hosted page:** 👉 [https://lovely-sprinkles-82a385.netlify.app/]  
 
-<img width="1522" alt="Screen Shot 2020-05-19 at 23 05 46" src="https://user-images.githubusercontent.com/8457808/82400515-7d026d80-9a25-11ea-83f1-3b9cb8347e07.png">
+## **🚀 Features**  
+- 🌐 **Publish your Obsidian notes** as a fully functional website.  
+- 🖼 **Graph view** to visually explore linked notes.  
+- 🎨 **Customizable home page** for a personalized experience.  
+- 🔄 **Sync updates automatically** via GitHub and Vercel.  
+- 🌍 **Add a custom domain** for a professional URL.  
 
-## A note about GitHub Pages
-> [!NOTE]  
-> **Update (January 2023)**: it seems that GitHub Pages supports custom plugins now, thanks to GitHub Actions ([view relevant discussion](https://github.com/maximevaillancourt/digital-garden-jekyll-template/discussions/144)). 
+## **⭕ Supported Platforms**  
+  <br>
+  <a href="#" target="_blank"><img alt="Windows" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>  
+  <a href="#" target="_blank"><img alt="MacOS" src="https://badgen.net/badge/Download/macOS/?color=black&icon=apple&label"></a>  
+  <a href="#" target="_blank"><img alt="Linux" src="https://badgen.net/badge/Download/Linux/?color=orange&icon=terminal&label"></a>  
+   <a href="https://github.com/GitSquared/edex-ui/releases/download/v2.2.8/eDEX-UI-Android.apk" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Android/?color=green&icon=android&label"></a>
+  <br>
 
-GitHub Pages only partially supports this template: to power the interactive notes graph, this template uses a custom Jekyll plugin to generate the graph data in [`notes_graph.json`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/7ac331a4113bac77c993856562acc2bfbde9f2f7/_plugins/bidirectional_links_generator.rb#L102), and [GitHub Pages doesn't support custom Jekyll plugins](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins).
+## **📚 Tech Stack**  
 
-If you want to use the graph with GitHub Pages, you may try building your garden locally using Jekyll then pushing the result to GitHub Pages.
+![My Skills](https://skillicons.dev/icons?i=github,markdown,obsidian,git,markdown,netlify,github)  
 
-Alternatively, you may deploy your garden to Netlify and it'll work out of the box. [I wrote a guide explaining how to set this up](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+![Jekyll](https://img.shields.io/badge/Jekyll-%23CC0000.svg?style=for-the-badge&logo=jekyll&logoColor=white)  
 
-If you don't care about the graph, you can simply remove it from this layout, [as explained here](https://github.com/maximevaillancourt/digital-garden-jekyll-template/discussions/132#discussioncomment-3625772).
+## **✅ Requirements**  
+To set up your **Obsidian Digital Garden**, you’ll need:  
+- **Obsidian** (for note-taking) → [Download](https://obsidian.md/)  
+- **GitHub account** (to store your notes) → [Sign Up](https://github.com/)  
+- **GitHub Desktop** (for easy file management) → [Download](https://desktop.github.com/)  
+- **Netlify account** (for free web hosting) → [Sign Up](https://netlify.com/) 
 
-## License
 
-Source code is available under the [MIT license](LICENSE.md).
+## **🏃‍♂️ How to Set Up**  
+
+1. **Go to the Digital Garden Jekyll Template:**  
+   👉 [Digital Garden Jekyll Template](https://github.com/slynchdigital/digital-garden-jekyll-template)  
+2. Click **"Use this template"** → **"Create a new repository"**.  
+3. **Clone the repo** using GitHub Desktop:  
+```bash
+   git clone https://github.com/your-username/obsidian-digital-garden.git
+   cd obsidian-digital-garden
+   Add your notes, push to GitHub
+```
+**Detailed Description on:** : https://medium.com/@Yugesh_S
+
+## **✨ Results**  
+Once deployed, navigate to your **Vercel site** and explore:  
+
+- 📄 View your **published notes**.  
+- 🔗 Click linked notes to **navigate easily**.  
+- 🌍 View the **interactive graph** to explore relationships.  
+
+![image](https://github.com/user-attachments/assets/dbe722c6-d663-432a-8ef9-e66711ec4663)
+
+
+## **📩 Contact**  
+
+For support or questions, feel free to reach out:  
+
+📬 **Contact Form:** https://forms.gle/gbnD57wG6oRVJ3aT8
+
+🌍 **Website:** : https://yugesh.me
+
+🕸️ **Hosted website** : https://lovely-sprinkles-82a385.netlify.app/
+
+💬 **GitHub Discussions:** : https://github.com/yugeshsivakumar/My-Digital-Garden
+
+## 🔑 License
+
+This portfolio is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
