@@ -1,22 +1,20 @@
-
-
 ---
 title: How to Publish Your Obsidian Notes Online for Free
 ---
 # How to Publish Your Obsidian Notes Online for Free
 
-![1741382957716](image/your-first-note/1741382957716.png)
+![1741384244972](image/your-first-note/1741384244972.png)
 
 ## Introduction
 
-Obsidian is a powerful note-taking tool, but what if you want to share your notes with the world? **Digital Garden** lets you publish your Obsidian notes as a website so others can explore your knowledge base.
+Obsidian is a powerful note-taking tool, but what if you want to share your notes with the world? [[Digital Garden]] lets you publish your Obsidian notes as a website so others can explore your knowledge base.
 
 In this guide, we will learn how to:
 
-✅ Set up a GitHub account
-✅ Use Digital Garden Jekyll Template to publish notes
-✅ Deploy your site using Vercel
-✅ Automatically update your notes using GitHub Desktop
+✅ Set up a [[GitHub]] account
+✅ Use [[Digital Garden]] Jekyll Template to publish notes
+✅ Deploy your site using [[Vercel]]
+✅ Automatically update your notes using [[GitHub]] Desktop
 
 By the end of this tutorial, even non-technical users can set up their public knowledge base in just a few steps! 🎉
 
@@ -30,18 +28,18 @@ Obsidian offers an official publishing service called **Obsidian Publish**, but 
 
 ### Here's why Digital Garden is a better choice:
 
-✅ **Completely Free** – Unlike Obsidian Publish, Digital Garden lets you host your notes at no cost using GitHub and Vercel.
+✅ **Completely Free** – Unlike Obsidian Publish, [[Digital Garden]] lets you host your notes at no cost using [[GitHub]] and [[Vercel]].
 ✅ **More Customization** – You have full control over the design, layout, and structure of your website.
 ✅ **Open-Source & Flexible** – You can modify and expand it according to your needs.
-✅ **Automatic Updates** – Every time you push new notes to GitHub, your site updates automatically.
+✅ **Automatic Updates** – Every time you push new notes to [[GitHub]], your site updates automatically.
 
-With **Digital Garden**, you get all the benefits of publishing your notes online without any recurring fees! 🚀
+With [[**Digital Garden]]**, you get all the benefits of publishing your notes online without any recurring fees! 🚀
 
 ---
 
 ## Step 1: Create a GitHub Account
 
-**GitHub** is a platform that helps you store and manage your files online. You'll need an account since **Digital Garden** uses GitHub to store notes.
+[[Github]] is a platform that helps you store and manage your files online. You'll need an account since [[Digital Garden]] uses [[GitHub]] to store notes.
 
 ### How to Sign Up for GitHub:
 
@@ -76,7 +74,7 @@ Now your **GitHub repo** is ready. Next, we'll download **GitHub Desktop** to ma
 
 ### How to Install GitHub Desktop:
 
-1. Download GitHub Desktop 👉 [desktop.github.com](https://desktop.github.com)
+1. Download [[GitHub]] Desktop 👉 [desktop.github.com](https://desktop.github.com)
 2. Install and open the app.
 3. Sign in using your **GitHub account**.
 
