@@ -4,16 +4,15 @@ title: Home
 id: home
 permalink: /
 ---
-
-# Welcome to My Digital Garden! 🌱✨  
+# Welcome to My Digital Garden! 🌱✨
 
 <p style="padding: 2em 1.5em; background: linear-gradient(135deg, #e3f2fd, #f5f7ff); border-radius: 8px; text-align: center;">
-  🌟 Start exploring with <span style="font-weight: bold">[[your-first-note]]</span> and grow your knowledge base!  
+  🌟 Start exploring with <span style="font-weight: bold">[[My first note]]</span> and grow your knowledge base!  
 </p>
 
 ---
 
-## 📌 Recently Updated Notes  
+## 📌 Recently Updated Notes
 
 <ul style="list-style-type: none; padding: 0;">
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
@@ -29,10 +28,11 @@ permalink: /
 
 ---
 
-## ✨ How to Navigate?  
-📂 Browse notes from the sidebar 
-🔗 Use **internal links** to connect thoughts  
-🧠 Build your **knowledge network**  
+## ✨ How to Navigate?
+
+📂 Browse notes from the sidebar
+🔗 Use **internal links** to connect thoughts
+🧠 Build your **knowledge network**
 
 <style>
   .wrapper {
